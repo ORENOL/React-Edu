@@ -1,0 +1,55 @@
+.dtcnkey {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 50px;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.dtcnkey:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.contents {
+    white-space: nowrap;
+    margin: 5px;
+    text-align: center;
+
+}
+
+.gridTag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+}
+
+.sp1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.sp2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+}
+
+.sp21 {
+    background-color: white;
+    color: green;
+}
+.sp22 {
+    background-color: white;
+    color: black;
+}
+.sp23 {
+    background-color: white;
+    color: rgb(190, 0, 0);
+}
