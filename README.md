@@ -11,3 +11,4 @@
 ## 참고자료
 * tailwindcss - https://tailwindcss.com/docs/installation (Elements, UI)
 * React Icons - https://react-icons.github.io/react-icons
+* vercel - https://vercel.com/orens-projects-18b9c271 (무료 서버리스 호스트)
