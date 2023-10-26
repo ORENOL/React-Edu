@@ -36,6 +36,7 @@ const FcstMain = () => {
         }
 
         const handleAreaChange = () => {
+            if(selRef.current.value == "") return;
             let temp = getxy.filter((item) => item.행정구역코드 === parseInt(selRef.current.value))[0];
             setArea(temp["1단계"])
             setX(temp["격자 X"])
@@ -52,6 +53,9 @@ const FcstMain = () => {
     <article>
         <header>
             <a className="text-2xl font-bold">단기예보 입력 정보</a>
+            <div>
+                {area}: X({x}), Y({y})
+            </div>
         </header>
        <main>
         <form className="grid justify-between">
@@ -66,8 +70,14 @@ const FcstMain = () => {
        </main>
        <footer>
         <div className="grid justify-between">
-            <Link to={`/ultra/${dt}/${area}/${x}/${y}`} role="button" className="font-bold text-xl">초단기예보</Link>
-            <Link to={`/vilage/${dt}/${area}/${x}/${y}`} role="button" className="font-bold text-xl">단기예보</Link>
+            { (dt === undefined) | (x === undefined) 
+            ? <button className="font-bold text-xl">초단기예보</button> 
+            : <Link to={`/ultra/${dt}/${area}/${x}/${y}`} role="button" className="font-bold text-xl">초단기예보</Link>
+            }
+            { (dt === undefined) | (x === undefined) 
+            ? <button className="font-bold text-xl">단기예보</button>
+            : <Link to={`/vilage/${dt}/${area}/${x}/${y}`} role="button" className="font-bold text-xl">단기예보</Link>
+            }
         </div>
        </footer>
     </article>
