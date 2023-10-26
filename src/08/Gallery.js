@@ -55,7 +55,7 @@ const Gallery = () => {
         const enKw = encodeURI(kw);
         let url = 'https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1'
         url += `?serviceKey=${apikey}`
-        url +=  '&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&_type=json'
+        url +=  '&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&_datatype=json'
         url += `&keyword=${enKw}`
 
         fetch(url)
