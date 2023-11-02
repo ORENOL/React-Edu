@@ -1,6 +1,6 @@
 // import Frcst from './05/Frcst';
 // import RoutMain from './10/RoutMain';
-import Fcst from './11/Fcst';
+import Fcst from './12/Fcst';
 import './App.css';
 // import Mycom from './03/Mycom'
 // import MycomN from './03/MycomN'

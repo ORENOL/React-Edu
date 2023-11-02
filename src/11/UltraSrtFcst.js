@@ -61,9 +61,6 @@ const UltraSrtFcst = () => {
       tempcd.단위,])
 
     setMyItem(tempdata)
-
-
-    setType(selRef.current.value)
     setType2(getCode.filter((item) => item.예보구분 === "초단기예보").filter((item) => item.항목값 === selRef.current.value)[0])
   }
 
