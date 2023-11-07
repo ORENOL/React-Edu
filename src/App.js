@@ -1,6 +1,8 @@
 // import Frcst from './05/Frcst';
 // import RoutMain from './10/RoutMain';
-import Fcst from './12/Fcst';
+// import Fcst from './12/Fcst';
+import { RecoilRoot } from 'recoil';
+import DivMains from './14/DivMains';
 import './App.css';
 // import Mycom from './03/Mycom'
 // import MycomN from './03/MycomN'
@@ -25,7 +27,10 @@ function App() {
     // <Gallery />
     // <Busan />
     // <RoutMain />
-    <Fcst />
+    // <Fcst />
+    <RecoilRoot>
+      <DivMains />
+    </RecoilRoot>
   );
 }
 

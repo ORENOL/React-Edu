@@ -12,7 +12,7 @@ const Ultra = ({dt, area, m, items}) => {
 
     const opItem = getcode.filter((item) => item.예보구분 === fcst).map((item => [item.항목값,item.항목명]))
 
-    const sky = {'1': '맑음☀', '3': '구름많음⛅', '4': '흐림☁'};
+    const sky = {'1': '☀', '3': '구름많음⛅', '4': '흐림☁'};
     const pty = {'0': '없음', '1': '비', '2': '비/눈', '3': '눈', '4': '소나기', '5':'빗방울','6':'빗방울눈날림','7':'눈날림'};
 
     const handleTypeChange = (e) => {
