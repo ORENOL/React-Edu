@@ -2,8 +2,9 @@
 // import RoutMain from './10/RoutMain';
 // import Fcst from './12/Fcst';
 import { RecoilRoot } from 'recoil';
-import DivMains from './14/DivMains';
+//import DivMains from './14/DivMains';
 import './App.css';
+import Login from './15/Login';
 // import Mycom from './03/Mycom'
 // import MycomN from './03/MycomN'
 // import MyDiv from './03/MyDiv'
@@ -28,8 +29,11 @@ function App() {
     // <Busan />
     // <RoutMain />
     // <Fcst />
+    //<RecoilRoot>
+      //<DivMains />
+    //</RecoilRoot>
     <RecoilRoot>
-      <DivMains />
+      <Login />
     </RecoilRoot>
   );
 }
